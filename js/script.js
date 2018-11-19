@@ -11,48 +11,47 @@ var appData = {
 };
 
 
-/*for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 2; i++) {
 
     let item = prompt("введите статью расходов"),
         cost = prompt("во сколько обойдется?");
 
-    if ( (typeof(item))=== 'string' && (typeof(item)) != null && (typeof(cost)) != null 
+    if ( (isNaN(item)) && (typeof(item)) != null && (typeof(cost)) != null 
     && item != '' && cost != '' && item.length < 10) {
         console.log("done");
         appData.expenses[item] = cost;
     }  else {
         i--;
     }
-};*/
+};
 /*let i = 0;
 while (i < 2) {
     let item = prompt("введите статью расходов"),
         cost = prompt("во сколько обойдется?");
-        if ( (typeof(item))=== 'string' && (typeof(item)) != null && (typeof(cost)) != null 
-    && item != '' && cost != '' && item.length < 10) {
+        if ( (isNaN(item))=== 'string' && (typeof(item)) != null && (typeof(cost)) != null && 
+        item != '' && cost != '' && item.length < 10) {
         console.log("done");
-        appData.expenses[item] = cost;  
+        appData.expenses[item] = cost; 
+        i++; 
     } else {
-        i--;
-    }
-    i++;            
+        console.log("error");
+    }        
 }*/
-let i = 0;
+
+/*let i = 0;
 do {
     let item = prompt("введите статью расходов"),
         cost = prompt("во сколько обойдется?");
-        if ( (typeof(item))=== 'string' && (typeof(item)) != null && (typeof(cost)) != null && 
+        if ( (isNaN(item))=== 'string' && (typeof(item)) != null && (typeof(cost)) != null && 
         item != '' && cost != '' && item.length < 10) {
         console.log("done");
         appData.expenses[item] = cost;
-        
+        i++;
     } else {
-        console.log("error");
-        i--;
-    } i++;
-                 
+        console.log("error");   
+    }                
 } 
-while (i < 2);
+while (i < 2);*/
 
 appData.moneyPerDay = appData.budget / 30;
 
